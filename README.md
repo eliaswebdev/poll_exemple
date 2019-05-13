@@ -27,7 +27,7 @@ rails s
 
 ## Gerar Diagrama ERD (Entity Relationship Diagram):
 ```
-rake erd orientation=horizontal inheritance=true notation=bachman title='Poll Exemple (Entity Relationship Diagram)' filename='doc/erd-poll'
+rake erd orientation=horizontal inheritance=true title='Poll Exemple (Entity Relationship Diagram)' filename='doc/erd-poll'
 ```
 
 ## Code Maintenance By
