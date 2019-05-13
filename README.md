@@ -1,24 +1,34 @@
-# README
+### Poll Exemple
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Stack
 
-Things you may want to cover:
+* Ruby 2.6.2
+* Rails 5.2.3
+* Sqlite
 
-* Ruby version
+---
+Instalar as gems
+---
+```
+bundle install
+```
 
-* System dependencies
+---
+Executando as migrations
+---
+```
+rails db:create db:migrate db:seed
+```
 
-* Configuration
+## Executar em modo de desenvolvimento
+```
+rails s
+```
 
-* Database creation
+## Gerar Diagrama ERD (Entity Relationship Diagram):
+```
+rake erd orientation=horizontal inheritance=true notation=bachman title='Poll Exemple (Entity Relationship Diagram)' filename='doc/erd-poll'
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Code Maintenance By
+- Elias Ferreira Junior 
