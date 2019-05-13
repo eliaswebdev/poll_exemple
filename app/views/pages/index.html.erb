@@ -1,0 +1,18 @@
+<%= notice %>
+
+<h1>Enquetes</h1>
+
+<h3>
+  <% @poll.title %>
+</h3>
+<div>
+  <%= form_for @vote, url: vote_path do |f| %>
+    <% @poll.options.each do |option| %>
+      <%= f.label option.id, for: "vote_option_id_#{option.id}" do %>
+        <%= f.radio_button :option_id, option.id %> <%= option.text %> (<%= option.votes.size %>)
+      <% end %>
+      <br>
+    <% end %>
+    <%= f.submit 'Votar' %>
+  <% end %>
+</div>
